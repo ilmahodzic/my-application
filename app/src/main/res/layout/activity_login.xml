@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login"
-    android:background="@drawable/android">
+    tools:context=".Login">
 
     <TextView
         android:id="@+id/logo"
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:rotationX="2"
         android:text="Login"
-        android:textColor="#322F2F"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,19 +28,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/btn_bg"
         android:drawableLeft="@drawable/ic_security"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Lozinka"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +51,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
-        android:background="@drawable/input_bg"
+        android:background="@drawable/btn_bg"
         android:drawableLeft="@drawable/ic_email"
         android:drawablePadding="10dp"
         android:ems="10"
@@ -62,6 +61,7 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/inputLozinka"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/inputLozinka"
@@ -72,8 +72,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:background="@drawable/input_bg"
+        android:backgroundTint="#A36B0B"
         android:text="Login"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/inputLozinka"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/inputLozinka"
@@ -95,14 +96,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nemaš account?"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textViewSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign up!"
-            android:textColor="@color/black" />
+            android:textColor="@color/oker"
+            android:textSize="20sp" />
     </LinearLayout>
 
 
